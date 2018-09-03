@@ -1,0 +1,50 @@
+<config>
+    <menu>
+        <system>
+            <children>  
+                <lindybop>
+                    <title>Lindy Bop</title>
+                    <sort_order>0</sort_order>
+                    <children>
+                        <lookbookImage translate="title" module="lookbookImage">
+                            <title>Lindy Bop Look Books</title>
+                            <sort_order>50</sort_order>
+                            <action>adminhtml/lookbookImage_lookbook/index</action>
+                        </lookbookImage>                        
+                    </children>
+                </lindybop>
+            </children>
+        </system>
+    </menu>
+    <acl>
+        <resources>
+            <all>
+                <title>Lindy Bop</title>
+            </all>
+            <admin>
+                <children>
+                    <lindybop>
+                        <children>
+                            <lookbookImage translate="title" module="lookbookImage">
+                                <title>Lindy Bop Look Books</title>
+                                <sort_order>50</sort_order>
+                            </lookbookImage>
+                        </children>
+                    </lindybop>
+                </children>
+                <system>
+                    <children>
+                        <lindybop>
+                            <children>
+                                <lookbookImage translate="title" module="lookbookImage">
+                                    <title>Lindy Bop Look Books</title>
+                                    <sort_order>50</sort_order>
+                                </lookbookImage>
+                            </children>
+                        </lindybop>                    
+                    </children>
+                </system>
+            </admin>
+        </resources>
+    </acl>
+</config>
